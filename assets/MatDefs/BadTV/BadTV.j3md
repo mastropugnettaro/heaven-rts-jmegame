@@ -1,0 +1,28 @@
+MaterialDef BadTVFilter {
+ 
+    MaterialParameters {
+        Float DistortionFreq
+        Float DistortionScale
+        Float DistortionRoll
+        Float Interference
+        Float FrameLimit
+        Float FrameShape
+        Float FrameSharpness
+        Float Brightness
+        Int NumSamples;
+        Texture2D Texture;
+        Texture3D Noise;
+        Texture3D Rand;
+    }
+ 
+    Technique {
+        VertexShader GLSL100:   Shaders/BadTV/BadTV.vert
+        FragmentShader GLSL100: Shaders/BadTV/BadTV.frag
+ 
+        WorldParameters {
+            Time
+        }
+        Defines {
+        }
+    }
+}

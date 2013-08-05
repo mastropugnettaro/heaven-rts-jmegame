@@ -1,0 +1,21 @@
+Material MyMaterial : MatDefs/NewTerrain/TerrainLighting.j3md {
+    MaterialParameters {
+        WardIso : false
+        DiffuseMap : Flip Repeat /Textures/dirt.jpg
+        Shininess : 0.01
+        isTerrainGrid : true
+        useTriPlanarMapping : true
+        DiffuseMap_0_scale : 4.0
+    }
+    AdditionalRenderState {
+      FaceCull Back
+      Wireframe Off
+      DepthWrite On
+      PolyOffset 0.0 0.0
+      AlphaTestFalloff 0.0
+      Blend Off
+      PointSprite Off
+      ColorWrite On
+      DepthTest On
+    }
+}

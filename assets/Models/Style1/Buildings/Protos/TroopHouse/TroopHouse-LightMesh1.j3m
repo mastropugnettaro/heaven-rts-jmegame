@@ -1,0 +1,29 @@
+Material MyMaterial : Common/MatDefs/Light/Lighting.j3md {
+    MaterialParameters {
+        DiffuseMap : Flip Repeat Models/Style1/Buildings/Protos/TroopHouse/Light.png
+        AlphaMap : Flip Repeat Models/Style1/Buildings/Protos/TroopHouse/Light.png
+        Minnaert : false
+        Specular : 1.0 1.0 1.0 1.0
+        Diffuse : 1.0 1.0 1.0 1.0
+        UseMaterialColors : true
+        ParallaxHeight : 0.05
+        Ambient : 0.0 0.0 0.0 1.0
+        Shininess : 1.0
+        WardIso : false
+        UseAlpha : true
+        AlphaDiscardThreshold : 0.1
+        FilterMode : 0
+        VertexLighting : false
+    }
+    AdditionalRenderState {
+      FaceCull Back
+      Wireframe Off
+      DepthWrite Off
+      PolyOffset 0.0 0.0
+      AlphaTestFalloff 0.0
+      Blend Additive
+      PointSprite Off
+      ColorWrite On
+      DepthTest On
+    }
+}

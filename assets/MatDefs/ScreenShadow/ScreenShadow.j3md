@@ -1,0 +1,21 @@
+MaterialDef BadTVFilter {
+ 
+    MaterialParameters {
+        Vector4 MapPos;
+        Int NumSamples;
+        Texture2D Texture;
+        Texture2D NoiseTile;
+        Texture2D Map;
+    }
+ 
+    Technique {
+        VertexShader GLSL100:   Shaders/ScreenShadow/ScreenShadow.vert
+        FragmentShader GLSL100: Shaders/ScreenShadow/ScreenShadow.frag
+ 
+        WorldParameters {
+            Time
+        }
+        Defines {
+        }
+    }
+}

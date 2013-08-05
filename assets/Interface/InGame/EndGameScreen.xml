@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty xmlns="http://nifty-gui.sourceforge.net/nifty-1.3.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://nifty-gui.sourceforge.net/nifty-1.3.xsd http://nifty-gui.sourceforge.net/nifty-1.3.xsd">
+    <useStyles filename="Interface/ScifiStyle1/scifi-default-styles.xml" />
+    <useControls filename="nifty-default-controls.xml" />
+    <style id="font16">
+        <attributes font="aurulent-sans-16.fnt" color="#ffff"/>
+    </style>
+    <style id="defaultFont">
+        <attributes  font="aurulent-sans-16.fnt" color="#ffff"  />
+    </style>
+    <style id="defaultFontBig">
+        <attributes font="Interface/Fonts/SciFied.fnt" color="#ff2f"  />
+    </style>
+    <screen id="EndGameScreen"  controller="rts.ui.EndGameUI">
+        <layer id="fix" childLayout="vertical"  backgroundImage="Interface/MainMenu/Images/bg/space1.jpg">
+
+            
+            <panel id="titleBar" childLayout="horizontal" backgroundColor="#4444" align="center" valign="center" width="100%" height="10%" padding="10">
+                <effect>
+                    <onStartScreen name="move" mode="in" direction="left" length="400" startDelay="0" inherit="true"/>
+                </effect>
+                <control style="scifi-button" id="buttonBack" name="button" label="Back">
+                    <interact onClick="backToGame()"/>    
+                </control>
+                
+                <text style="fontCS16" width="80%" stype="nifty-label" text="End Game"/>
+            </panel>
+            
+            
+            <panel id="main" childLayout="horizontal" align="center" valign="center" width="100%" height="90%" padding="10">
+                
+                <panel id="rightPanel" style="scifi-panel" childLayout="vertical" align="center" valign="center" width="100%" height="100%" padding="10">
+                    <effect>
+                        <onStartScreen name="move" mode="in" direction="bottom" length="400" startDelay="0" inherit="true"/>
+                    </effect>
+                    
+                    <panel id="EndGamePanel" width="100%" height="100%" childLayout="vertical" padding="8px,2px,15px,2px" visible="true">
+                        <effect>
+                            <onShow  name="fade" startColor="#0000" endColor="#000f" length="450"/>
+                        </effect>
+                        <text style="defaultFontBig" color="#ff0f" width="100%" stype="nifty-label" text="VICTORY"/>
+                        <panel id="List" width="100%" height="290px" childLayout="vertical" padding="25px,2px,0px,2px">
+                            <panel id="row1" height="40px" width="100%" align="center" valign="center" childLayout="horizontal" padding="4px">
+                                <text id="labelScore" style="defaultFont" width="20%" text="Your Soore" align="left" valign="center" textAlign="left" />
+                                <control id="mapname" name="textfield" width="80%" text="10000" align="right" valign="center" />
+                            </panel>  
+                            <panel id="row2" height="250px" width="100%" align="center"  valign="center" childLayout="horizontal" padding="4px">
+                                <panel id="row2_col1" height="100%" width="120px" align="center"  valign="center" childLayout="vertical" padding="4px">
+                                    <image id="yourIcon" align="center" height="60px" width="60px" valign="bottom" filename="Interface/InGame/images/unitpics/armch.png"/>
+                                    <panel id="row2_col1" height="40px" width="100%" align="center"  valign="center" childLayout="horizontal" padding="4px">
+                                        <image id="protossIcon" align="center" height="100%" width="40px" valign="bottom" filename="Interface/InGame/images/unitpics/aafus.png"/>
+                                        <text id="labelScore" style="defaultFont" width="*" text="Player2" align="left" valign="center" textAlign="left" />
+                                    </panel> 
+                                    <panel id="row2_col1" height="40px" width="100%" align="center"  valign="center" childLayout="horizontal" padding="4px">
+                                        <image id="zergIcon" align="center" height="100%" width="40px" valign="bottom" filename="Interface/InGame/images/unitpics/antinuke.png"/>
+                                        <text id="labelScore" style="defaultFont" width="*" text="Player3" align="left" valign="center" textAlign="left" />
+                                    </panel> 
+                                    <panel id="row2_col1" height="40px" width="100%" align="center"  valign="center" childLayout="horizontal" padding="4px">
+                                        <image id="terranIcon" align="center" height="100%" width="40px" valign="bottom" filename="Interface/InGame/images/unitpics/arm_jammer.png"/>
+                                        <text id="labelScore" style="defaultFont" width="*" text="Player4" align="left" valign="center" textAlign="left" />
+                                    </panel> 
+                                </panel>  
+
+                                <image id="graph" align="center" height="256px" width="512px" valign="bottom" />
+                            </panel>  
+
+                        </panel>
+                    </panel>    
+                                        
+                    <panel id="ButtonPanel" width="100%" height="*" childLayout="horizontal" align="center" padding="10px,120px,0px,120px" visible="true">
+                        <control width="50%" style="scifi-button" id="apply" align="center" name="button" label="Menu">
+                            <interact onClick="backToMainMenu()"/>  
+                        </control>/>
+                        <control width="50%" style="scifi-button" id="default" align="center" name="button" label="Back Game">
+                            <interact onClick="backToGame()"/>  
+                        </control>/>       
+                    </panel>
+                </panel>  
+            </panel>
+            
+
+        </layer>
+    </screen>
+</nifty>

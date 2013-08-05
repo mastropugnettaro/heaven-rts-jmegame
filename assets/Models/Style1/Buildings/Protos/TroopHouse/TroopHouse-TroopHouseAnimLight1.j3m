@@ -1,0 +1,29 @@
+Material MyMaterial : Shaders/GPUAnim/GPUAnimationFactory.j3md {
+    MaterialParameters {
+        DiffuseMap : Flip Repeat Models/Style1/Buildings/Protos/TroopHouse/TroopHouseLightTex.png
+        AlphaMap : Flip Repeat Models/Style1/Buildings/Protos/TroopHouse/TroopHouseLightTex.png
+        Minnaert : false
+        Specular : 1.0 1.0 1.0 1.0
+        Diffuse : 1.0 1.0 1.0 1.0
+        UseMaterialColors : true
+        ParallaxHeight : 0.05
+        Ambient : 0.0 0.0 0.0 1.0
+        Shininess : 20.0
+        WardIso : false
+        Texture_Animate : true
+MoveF_Speed: 8.0
+
+        Texture_Move : true
+    }
+    AdditionalRenderState {
+      FaceCull Off
+      Wireframe Off
+      DepthWrite On
+      PolyOffset 0.0 0.0
+      AlphaTestFalloff 0.0
+      Blend Off
+      PointSprite Off
+      ColorWrite On
+      DepthTest On
+    }
+}

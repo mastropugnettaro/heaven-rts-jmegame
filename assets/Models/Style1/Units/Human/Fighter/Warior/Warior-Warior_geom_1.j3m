@@ -1,0 +1,24 @@
+Material MyMaterial : Common/MatDefs/Light/Lighting.j3md {
+    MaterialParameters {
+        DiffuseMap : Flip Repeat Models/Style1/Units/Warior/Robot_arm2_d.dds
+        Specular : 0.09 0.09 0.09 1.0
+        Diffuse : 0.384 0.384 0.384 1.0
+        UseMaterialColors : true
+        ParallaxHeight : 0.05
+        NormalMap : Flip Repeat Models/Style1/Units/Warior/Robot_arm2_d.dds
+        Ambient : 0.0 0.0 0.0 1.0
+        Shininess : 92.15686
+        Minnaert : true
+    }
+    AdditionalRenderState {
+      FaceCull Back
+      Wireframe Off
+      DepthWrite On
+      PolyOffset 0.0 0.0
+      AlphaTestFalloff 0.01
+      Blend Alpha
+      PointSprite Off
+      ColorWrite On
+      DepthTest On
+    }
+}

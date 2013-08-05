@@ -1,0 +1,25 @@
+Material MyMaterial : Common/MatDefs/Light/Lighting.j3md {
+    MaterialParameters {
+        DiffuseMap : Flip Repeat Models/Style1/Resources/Energy/diffuse_blue.png
+        Minnaert : true
+        Specular : 1.0 1.0 1.0 1.0
+        Diffuse : 1.0 1.0 1.0 1.0
+        UseMaterialColors : true
+        ParallaxHeight : 0.05
+        Ambient : 0.0 0.0 0.0 1.0
+        Shininess : 20.0
+        WardIso : false
+        AlphaMap : Models/Style1/Resources/Energy/alpha_blue_1.png
+    }
+    AdditionalRenderState {
+      FaceCull Off
+      Wireframe Off
+      DepthWrite On
+      PolyOffset 0.0 0.0
+      AlphaTestFalloff 0.0
+      Blend AlphaAdditive
+      PointSprite Off
+      ColorWrite On
+      DepthTest On
+    }
+}
