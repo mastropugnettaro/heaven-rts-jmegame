@@ -1,17 +1,14 @@
 package rts;
 
-import rts.gameplay.RTSGamePlayManager;
 import com.jme3.cursors.plugins.JmeCursor;
 import com.jme3.input.KeyInput;
 import com.jme3.input.controls.ActionListener;
 import com.jme3.input.controls.KeyTrigger;
-import com.jme3.math.ColorRGBA;
-import com.jme3.post.FilterPostProcessor;
-import com.jme3.post.filters.ColorOverlayFilter;
 import com.jme3.texture.Texture2D;
 import de.lessvoid.nifty.elements.render.ImageRenderer;
 import java.util.ArrayList;
 import java.util.HashMap;
+import rts.gameplay.RTSGamePlayManager;
 import rts.gameplay.RTSPlayer;
 import rts.gameplay.base.Unit;
 import rts.ui.EndGameUI;
@@ -20,7 +17,7 @@ import rts.ui.InGameScreenUI;
 import rts.ui.MainMenuScreenUI;
 import rts.ui.MapUI;
 import rts.ui.MiniView;
-import sg.atom.core.GameGUIManager;
+import sg.atom.ui.GameGUIManager;
 import sg.atom.ui.common.UILoadingScreenController;
 
 /**

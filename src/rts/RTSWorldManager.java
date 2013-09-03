@@ -185,13 +185,14 @@ public class RTSWorldManager extends WorldManager {
         preloadModelsPath = new HashMap<String, String>(10);
         preloadModels = new HashMap<String, Spatial>(10);
 
-        preloadModelsPath.put("MainBuilding", "Models/Style1/Buildings/Protos/MainHouse/MainHouse.j3o");
-        preloadModelsPath.put("FighterBuidling", "Models/Style1/Buildings/Protos/TroopHouse/TroopHouse.j3o");
-        preloadModelsPath.put("Energy", "Models/Style1/Resources/Energy/Energy.j3o");
-        preloadModelsPath.put("GasMine", "Models/Style1/Resources/Energy/GasMine.j3o");
-        //preloadModelsPath.put("Warrior", "Models/Style1/Units/Warior/Warior.j3o");
-        preloadModelsPath.put("Warrior", "Models/Style1/Units/Human/Mech/Mech1/Mech.j3o");
-        //preloadModelsPath.put("Warrior", "Models/Style1/Units/Nomad/Nomad.j3o");
+        String assetRootPath = "Models/FuristicStyle/";
+        preloadModelsPath.put("MainBuilding", assetRootPath +"Buildings/Protos/MainHouse/MainHouse.j3o");
+        preloadModelsPath.put("FighterBuidling", assetRootPath +"Buildings/Protos/TroopHouse/TroopHouse.j3o");
+        preloadModelsPath.put("Energy", assetRootPath +"Resources/Energy/Energy.j3o");
+        preloadModelsPath.put("GasMine", assetRootPath +"Resources/Energy/GasMine.j3o");
+        //preloadModelsPath.put("Warrior", rootPath +"Units/Warior/Warior.j3o");
+        preloadModelsPath.put("Warrior", assetRootPath +"Units/Human/Mech/Mech1/Mech.j3o");
+        //preloadModelsPath.put("Warrior", rootPath +"Units/Nomad/Nomad.j3o");
 
         for (Entry<String, String> entry : preloadModelsPath.entrySet()) {
             Spatial orginalSpatial = assetManager.loadModel(entry.getValue());

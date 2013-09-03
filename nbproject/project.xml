@@ -29,14 +29,6 @@
                 <id>jar</id>
             </reference>
             <reference>
-                <foreign-project>AtomAI</foreign-project>
-                <artifact-type>jar</artifact-type>
-                <script>build.xml</script>
-                <target>jar</target>
-                <clean-target>clean</clean-target>
-                <id>jar</id>
-            </reference>
-            <reference>
                 <foreign-project>Chart3D</foreign-project>
                 <artifact-type>jar</artifact-type>
                 <script>build.xml</script>

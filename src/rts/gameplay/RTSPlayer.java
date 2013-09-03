@@ -8,7 +8,7 @@ import rts.gameplay.base.Country;
 import rts.gameplay.league.RTSGameMatch;
 import rts.gameplay.league.RTSGamePolicy;
 import rts.gameplay.league.RTSPlayerTeam;
-import sg.atom.core.StageManager;
+import sg.atom.stage.StageManager;
 import sg.atom.gameplay.player.Player;
 
 /**

@@ -10,7 +10,7 @@ import rts.core.entity.RTSSpatialEntity;
 import rts.gameplay.RTSGamePlayManager;
 import rts.ui.EntityActionUI;
 import rts.ui.EntityInfoUI;
-import sg.atom.core.GameGUIManager;
+import sg.atom.ui.GameGUIManager;
 import sg.atom.entity.Entity;
 import sg.atom.stage.SelectManager;
 import sg.atom.stage.select.function.SingleSelectFunction;

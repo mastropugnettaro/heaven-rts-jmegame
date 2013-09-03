@@ -14,7 +14,7 @@ import rts.gameplay.league.RTSPlayerTeam;
 import rts.gameplay.manager.BuildingManager;
 import rts.gameplay.manager.UnitManager;
 import rts.stage.RTSSelectManager;
-import sg.atom.core.StageManager;
+import sg.atom.stage.StageManager;
 
 /**
  *

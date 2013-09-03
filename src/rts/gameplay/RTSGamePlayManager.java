@@ -29,7 +29,7 @@ import rts.world.RTSGameWorldView;
 import sg.atom.entity.Entity;
 import sg.atom.entity.SpatialEntity;
 import sg.atom.gameplay.player.Player;
-import sg.atom.stage.GamePlayManager;
+import sg.atom.gameplay.GamePlayManager;
 import sg.atom.world.SceneGraphHelper;
 
 /**

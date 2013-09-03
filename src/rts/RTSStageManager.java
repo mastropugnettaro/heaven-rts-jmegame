@@ -4,7 +4,6 @@
  */
 package rts;
 
-import rts.gameplay.RTSGamePlayManager;
 import com.jme3.input.FlyByCamera;
 import com.jme3.input.KeyInput;
 import com.jme3.input.controls.KeyTrigger;
@@ -19,12 +18,13 @@ import rts.cam.RTSCamera;
 import rts.core.entity.RTSEntityManager;
 import rts.core.entity.RTSSpatialEntity;
 import rts.fx.filters.ScreenShadowFilter;
-import rts.world.map.Map;
+import rts.gameplay.RTSGamePlayManager;
 import rts.stage.RTSSelectManager;
-import sg.atom.core.StageManager;
+import rts.world.map.Map;
 import sg.atom.core.lifecycle.ProcessInfo;
 import sg.atom.entity.SpatialEntity;
 import sg.atom.gameplay.GameLevel;
+import sg.atom.stage.StageManager;
 import sg.atom.world.WorldSettings;
 
 /**

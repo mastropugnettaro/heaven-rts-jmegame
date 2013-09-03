@@ -106,7 +106,7 @@ public class MiniView {
 
     private Spatial createScene(AssetManager assetManager) {
         Node rootNode = new Node("Offview root");
-        Node model = (Node) assetManager.loadModel("Models/Style1/UnitDetail/Human/GirlCommander/model1.j3o");
+        Node model = (Node) assetManager.loadModel("Models/FuristicStyle/UnitDetail/Human/GirlCommander/model1.j3o");
 
         PointLight lamp = new PointLight();
         lamp.setPosition(new Vector3f(-10, -10, -10));

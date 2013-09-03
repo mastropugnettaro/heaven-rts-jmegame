@@ -1,7 +1,7 @@
 Material MyMaterial : Common/MatDefs/Light/Lighting.j3md {
     MaterialParameters {
-        DiffuseMap : Flip Repeat Models/Style1/Buildings/Protos/TroopHouse/Light.png
-        AlphaMap : Flip Repeat Models/Style1/Buildings/Protos/TroopHouse/Light.png
+        DiffuseMap : Flip Repeat Models/FuristicStyle/Buildings/Protos/TroopHouse/Light.png
+        DiffuseMap : Flip Repeat Models/FuristicStyle/Buildings/Protos/TroopHouse/Light.png
         Minnaert : false
         Specular : 1.0 1.0 1.0 1.0
         Diffuse : 1.0 1.0 1.0 1.0

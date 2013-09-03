@@ -9,7 +9,7 @@ import com.jme3.audio.AudioNode;
 import com.jme3.math.Vector3f;
 import com.jme3.scene.Node;
 import sg.atom.core.AtomMain;
-import sg.atom.core.SoundManager;
+import sg.atom.stage.SoundManager;
 
 /**
  *

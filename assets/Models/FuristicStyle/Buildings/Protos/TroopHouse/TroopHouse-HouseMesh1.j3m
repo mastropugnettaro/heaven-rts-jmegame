@@ -1,17 +1,21 @@
 Material MyMaterial : Common/MatDefs/Light/Lighting.j3md {
     MaterialParameters {
-        DiffuseMap : Flip Repeat Models/Style1/Units/Human/Mech/Mech1/mech_diffuse.png
+        DiffuseMap : Flip Repeat Models/FuristicStyle/Buildings/Protos/TroopHouse/troopHouse_diffuse.png
         Minnaert : false
         Specular : 1.0 1.0 1.0 1.0
-        Diffuse : 1.0 1 1.0 1
+        Diffuse : 1.0 1.0 1.0 1.0
         UseMaterialColors : true
         ParallaxHeight : 0.05
-        Ambient : 1.0 0.0 0.2 1.0
-        Shininess : 20.0
+        Ambient : 0.0 0.0 0.0 1.0
+        Shininess : 1.0
         WardIso : false
+        UseAlpha : false
+        AlphaDiscardThreshold : 0.1
+        FilterMode : 0
+        VertexLighting : false
     }
     AdditionalRenderState {
-      FaceCull Back
+      FaceCull Off
       Wireframe Off
       DepthWrite On
       PolyOffset 0.0 0.0

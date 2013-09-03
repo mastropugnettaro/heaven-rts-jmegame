@@ -7,7 +7,7 @@ package rts.stage;
 import com.jme3.math.ColorRGBA;
 import com.jme3.post.FilterPostProcessor;
 import com.jme3.post.filters.ColorOverlayFilter;
-import sg.atom.core.StageManager;
+import sg.atom.stage.StageManager;
 import sg.atom.fx.ScreenEffectManager;
 
 /**
